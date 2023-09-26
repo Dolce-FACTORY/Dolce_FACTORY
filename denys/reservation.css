@@ -1,0 +1,91 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    color: #cccccc;
+    background-color: #000;
+}
+
+a {
+    color: #E7E6E6;
+}
+
+h1 {
+    color: #000;
+}
+
+.slider {
+    display: block;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    font-size: 24px;
+    text-align: center;
+    
+    display: block;
+}
+
+.info_box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.info_column {
+    /* display: flex;
+    flex-wrap: wrap; */
+    flex: 1;
+    padding: 10px;
+}
+
+.input_class {
+    display: block;
+}
+
+.inst_div {
+    margin-top: 100px;
+}
+
+.inst_link {
+    border: solid;
+    padding: 10px;
+    margin-bottom: 100px;
+
+    text-decoration: none;
+    transition: .4s;
+    -webkit-transition: all .4s ease;
+}
+
+.inst_link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.row_of_pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+.row_of_pictures img {
+    max-width: 20%;
+    height: auto;
+}
+
+#for_section1 {
+    padding-top: 200px;
+}
+
+#terasa_img {
+    width: 400px;
+}
