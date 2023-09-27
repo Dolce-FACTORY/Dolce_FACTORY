@@ -4,21 +4,27 @@ body {
     font-size: 16px;
     font-weight: 300;
     color: #cccccc;
-    background-color: #000;
+    background: linear-gradient(rgb(0, 0, 0), rgb(48, 48, 48));
 }
 
 a {
-    color: #E7E6E6;
+    color: #ffffff;
 }
 
 h1 {
-    color: #000;
+    color: #ffffff;
+    filter: drop-shadow(#000000 -5px -5px 0px);
 }
 
 .slider {
     display: block;
     height: 100vh;
-    background-color: #fff;
+   background-image: url('./images/bar.jpg');
+   object-fit: cover;  
+}
+
+.reservation{
+        
 }
 
 .container {
@@ -32,10 +38,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin: 0;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .info_column {
@@ -43,10 +50,23 @@ h1 {
     flex-wrap: wrap; */
     flex: 1;
     padding: 10px;
+    
 }
+
+.info_column input{
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
+
 
 .input_class {
     display: block;
+    width: 250px;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 .inst_div {
@@ -57,7 +77,6 @@ h1 {
     border: solid;
     padding: 10px;
     margin-bottom: 100px;
-
     text-decoration: none;
     transition: .4s;
     -webkit-transition: all .4s ease;
@@ -77,9 +96,38 @@ h1 {
     margin-top: 50px;
 }
 
-.row_of_pictures img {
+.row_of_pictures span{
     max-width: 20%;
-    height: auto;
+    max-height: 100px;
+}
+
+.row_of_pictures_img {
+    width: 300px; height: 300px; object-fit: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+
+
+.row_of_pictures span:hover .row_of_pictures_svg{
+opacity: 1;
+transition: 1s;
+filter: drop-shadow(5px 5px black);
+}
+
+.row_of_pictures span:hover .row_of_pictures_img{
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.row_of_pictures_svg {
+    position: absolute;
+    max-width: 50px;
+    margin-left: -175px;
+    margin-top: 120px;
+    z-index: 1000;
+    transition: 1s;
+    opacity: 0;
 }
 
 #for_section1 {
@@ -88,4 +136,6 @@ h1 {
 
 #terasa_img {
     width: 400px;
+    margin-right: 50px;
+
 }
