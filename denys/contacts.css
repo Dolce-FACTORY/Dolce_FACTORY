@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    background: #fff;
+}
+
+a {
+    color: #ffffff;
+}
+
+h1 {
+    color: #3a1619;
+    font-size: 40px;
+}
+
+h2 {
+    color: #3a1619;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 90vh;
+    background-color: #b6a4a5;
+    background-image: url("C:\Users\Admin\Desktop\terasa2.jpg");
+}
+
+.slider-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 170px;
+}
+
+.slider-content a,
+.slider-content span {
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.slider-content a:hover {
+    color: #3a1619;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 400px;
+
+    margin-right: 50px;
+}
+
+.contact-cell {
+    padding: 30px;
+    border: solid #6d494c 2px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.contact-cell span{
+    color: #6d494c;
+}
+
+.contact-cell a {
+    text-decoration: underline;
+    color: #6d494c;
+    transition: 0.1s;
+}
+
+.contact-cell a:hover {
+    color: #96676a;
+}
+
+.inst_div {
+    margin-top: 100px;
+}
+
+.inst_link {
+    border: solid;
+    padding: 10px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    transition: .4s;
+    -webkit-transition: all .4s ease;
+    color: #6d494c;
+}
+
+.inst_link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.row_of_pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+.row_of_pictures span{
+    max-width: 20%;
+    max-height: 100px;
+}
+
+.row_of_pictures_img {
+    width: 300px; height: 300px; object-fit: cover;
+    z-index: 100;
+    transition: 1s;
+}
+
+
+
+.row_of_pictures span:hover .row_of_pictures_svg{
+opacity: 1;
+transition: 1s;
+filter: drop-shadow(5px 5px black);
+}
+
+.row_of_pictures span:hover .row_of_pictures_img{
+    filter: grayscale(0.7);
+    transition: 1s;
+}
+
+.row_of_pictures_svg {
+    position: absolute;
+    max-width: 50px;
+    margin-left: -175px;
+    margin-top: 120px;
+    z-index: 1000;
+    transition: 1s;
+    opacity: 0;
+}
+
+.container {
+    font-size: 24px;
+    text-align: center;
+
+    background-color: #fff;
+    
+    display: block;
+}
