@@ -9,7 +9,6 @@ body {
     background: #fff;
     font-size: 16px;
     font-weight: 300;
-    color: #cccccc;
     background: #fff;
 }
 
@@ -20,6 +19,10 @@ a {
 h1 {
     color: #3a1619;
     font-size: 40px;
+}
+
+h2 {
+    color: #3a1619;
 }
 
 .slider {
@@ -49,54 +52,43 @@ h1 {
     color: #3a1619;
 }
 
-.reservation {
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin-top: 50px;
 }
 
-.container {
-    font-size: 24px;
-    text-align: center;
-
-    background-color: #fff;
-    
-    display: block;
-}
-
-.container h2 {
-    color: #6d494c;
-    padding: 20px;
-}
-
-.info_box {
+.contact-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 50%;
-    margin: 0 auto;
 
-    display: flex;
-    justify-content: center;
+    height: 400px;
+
+    margin-right: 50px;
 }
 
-.info_column {
-    flex: 1;
-    padding: 10px;
-    
+.contact-cell {
+    padding: 30px;
+    border: solid #6d494c 2px;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 
-.info_column input{
-margin-bottom: 50px;
-margin-top: 20px;
+.contact-cell span{
+    color: #6d494c;
 }
 
+.contact-cell a {
+    text-decoration: underline;
+    color: #6d494c;
+    transition: 0.1s;
+}
 
-
-.input_class {
-    display: block;
-    width: 250px;
-    height: 40px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    font-size: 15px;
+.contact-cell a:hover {
+    color: #96676a;
 }
 
 .inst_div {
@@ -161,9 +153,11 @@ filter: drop-shadow(5px 5px black);
     opacity: 0;
 }
 
-#terasa_img {
-    width: 400px;
-    margin-right: 50px;
+.container {
+    font-size: 24px;
+    text-align: center;
 
-    filter: drop-shadow(0 0px 5px #a48e8f);
+    background-color: #fff;
+    
+    display: block;
 }
