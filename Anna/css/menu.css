@@ -109,3 +109,7 @@
   width: 0px;
   height: 0px;
 }
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(93, 53, 56, 0.6);
+} */
