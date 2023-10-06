@@ -32,14 +32,14 @@ h2 {
 
     height: 90vh;
     background-color: #b6a4a5;
-    background-image: url("C:\Users\Admin\Desktop\terasa2.jpg");
+
+    justify-content: center;
 }
 
 .slider-content {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 170px;
 }
 
 .slider-content a,
