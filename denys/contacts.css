@@ -17,8 +17,9 @@ a {
 }
 
 h1 {
-    color: #3a1619;
+    color: #c8bbbc;
     font-size: 40px;
+    filter: drop-shadow(0 3px #2c1113);
 }
 
 h2 {
@@ -31,7 +32,8 @@ h2 {
     align-items: center;
 
     height: 90vh;
-    background-color: #b6a4a5;
+    /* background-color: #b6a4a5; */
+    background-image: url(images/bunches1.jpg);
 
     justify-content: center;
 }
