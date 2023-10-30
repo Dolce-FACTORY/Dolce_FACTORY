@@ -29,10 +29,10 @@ h1 {
     justify-content: center;
     align-items: center;
     
-    background-size: cover; /* Ensure the background image covers the entire section */
-    background-position: center; /* Center the background image */
-
     height: 90vh;
+    
+    background-size: cover;
+    background-position: center;
     background-image: url(images/bunches1.jpg);
 }
 

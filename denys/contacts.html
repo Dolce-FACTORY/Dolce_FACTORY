@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <title>Dolce FACTORY</title>
     <link rel="stylesheet" type="text/css" href="contacts.css">
 </head>
@@ -35,15 +36,21 @@
             <div class="inst_div">
                 <a href="instagram.com" class="inst_link">INSTAGRAM</a>
                 <div class="row_of_pictures">
-                    <span><img class="row_of_pictures_img" src="images/image1.jpg" alt="">
-                    <img class="row_of_pictures_svg" src="instagram.svg" alt=""></span>
-                    <span><img class="row_of_pictures_img" src="images/image2.jpg" alt=""><img class="row_of_pictures_svg" src="instagram.svg" alt=""></span></span>
-                    <span><img class="row_of_pictures_img" src="images/image3.jpg" alt=""><img class="row_of_pictures_svg" src="instagram.svg" alt=""></span></span>
-                    <span><img class="row_of_pictures_img" src="images/image4.jpg" alt=""><img class="row_of_pictures_svg" src="instagram.svg" alt=""></span></span>
-                    <span><img class="row_of_pictures_img" src="images/image5.jpg" alt=""><img class="row_of_pictures_svg" src="instagram.svg" alt=""></span></span>
+                    <img class="row_of_pictures_img" src="images/image3.jpg" alt="">
+                    <img class="row_of_pictures_img" src="images/image2.jpg" alt="">
+                    <img class="row_of_pictures_img" src="images/image1.jpg" alt="">
+                    <img class="row_of_pictures_img" src="images/image4.jpg" alt="">
+                    <img class="row_of_pictures_img" src="images/image5.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        $(function() {
+            var img_amount = Math.floor(screen.width/300);
+            $(".row_of_pictures_img:lt(" + img_amount + ")").css("display", "inline");
+        })
+    </script>
 </body>
 </html>
