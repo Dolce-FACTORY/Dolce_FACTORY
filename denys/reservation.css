@@ -26,12 +26,14 @@ h1 {
 .slider {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
 
     height: 90vh;
-    /* background-color: #b6a4a5; */
     background-image: url(images/bunches1.jpg);
-    justify-content: center;
 }
 
 .slider-content {
@@ -57,6 +59,7 @@ h1 {
 .container {
     font-size: 24px;
     text-align: center;
+    width: 100%;
 
     background-color: #fff;
     
@@ -81,7 +84,6 @@ h1 {
 .info_column {
     flex: 1;
     padding: 10px;
-    
 }
 
 .info_column input{
@@ -167,4 +169,38 @@ filter: drop-shadow(5px 5px black);
     margin-right: 50px;
 
     filter: drop-shadow(0 0px 5px #a48e8f);
+}
+
+@media screen and (max-width: 1000px) {
+    #terasa_img {
+        display: none;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+}
+
+/* for phones */
+@media screen and (max-width: 540px) { 
+    .slider {
+        height: 60vh;
+    }
+
+    #terasa_img {
+        display: none;
+    }
+
+    .info_box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info_column {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
