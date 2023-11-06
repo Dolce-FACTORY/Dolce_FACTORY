@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dolce FACTORY</title>
     <link rel="stylesheet" href="reservation.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="slider">
@@ -24,24 +25,29 @@
 
                 <div class="info_column">
                     <span>Ім'я</span>
-                    <input type="text" class="input_class" placeholder="Ім'я">
+                    <input type="text" class="input_class" placeholder="Ім'я" id="input-name">
                     <span>Номер телефону</span>
-                    <input type="tel" class="input_class" placeholder="Номер телефону">
+                    <input type="tel" class="input_class" placeholder="Номер телефону" value="+380" id="input-phone">
                     <span>Час</span>
-                    <input type="time" class="input_class" placeholder="Час">
+                    <input type="time" class="input_class" placeholder="Час" id="input-time" min="09    :00" max="22:00">
                 </div>
                 <div class="info_column">
                     <span>Електронна скринька</span>
-                    <input type="email" class="input_class" placeholder="Електронна скринька">
+                    <input type="email" class="input_class" placeholder="Електронна скринька" id="input-email">
                     <span>Дата</span>
-                    <input type="date" class="input_class" placeholder="Дата">
+                    <input type="date" class="input_class" placeholder="Дата" id="input-date">
                     <span>К-сть осіб</span>
-                    <input type="number" class="input_class" placeholder="К-сть осіб">
+                    <input type="number" class="input_class" placeholder="К-сть осіб" id="input-people" value="1" min="1" max="20">
+                    
+                    <input type="submit" name="" id="input-submit" value="Зарезервувати">
                 </div>
+
             </form>
 
         </div>
 
     </section>
+
+    <script src="reservation.js"></script>
 </body>
 </html>
