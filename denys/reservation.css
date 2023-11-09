@@ -18,25 +18,28 @@ a {
 }
 
 h1 {
-    color: #3a1619;
+    color: #c8bbbc;
     font-size: 40px;
+    filter: drop-shadow(0 3px #2c1113);
 }
 
 .slider {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+    
     height: 90vh;
-    background-color: #b6a4a5;
-    background-image: url("C:\Users\Admin\Desktop\terasa2.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/bunches1.jpg);
 }
 
 .slider-content {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 170px;
 }
 
 .slider-content a,
@@ -56,6 +59,7 @@ h1 {
 .container {
     font-size: 24px;
     text-align: center;
+    width: 100%;
 
     background-color: #fff;
     
@@ -80,15 +84,41 @@ h1 {
 .info_column {
     flex: 1;
     padding: 10px;
-    
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    text-align: left;
+}
+
+#input-submit {
+    background-color: #b6a4a5;
+    width: 200px;
+    height: 50px;
+    color: #3a1619;
+    font-size: 20px;
+    border: 0;
+    filter: drop-shadow(0 0px 10px #a48e8f);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#input-submit:hover {
+    font-size: 21px;
+    background-color: #c4b3b4;
+    filter: drop-shadow(0 0px 7px #a48e8f);
+}
+
+.error-message {
+    color: #eb9393;
 }
 
 .info_column input{
 margin-bottom: 50px;
 margin-top: 20px;
 }
-
-
 
 .input_class {
     display: block;
@@ -166,4 +196,38 @@ filter: drop-shadow(5px 5px black);
     margin-right: 50px;
 
     filter: drop-shadow(0 0px 5px #a48e8f);
+}
+
+@media screen and (max-width: 1000px) {
+    #terasa_img {
+        display: none;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+}
+
+/* for phones */
+@media screen and (max-width: 540px) { 
+    .slider {
+        height: 60vh;
+    }
+
+    #terasa_img {
+        display: none;
+    }
+
+    .info_box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info_column {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

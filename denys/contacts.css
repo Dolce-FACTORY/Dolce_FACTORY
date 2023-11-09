@@ -17,8 +17,9 @@ a {
 }
 
 h1 {
-    color: #3a1619;
+    color: #c8bbbc;
     font-size: 40px;
+    filter: drop-shadow(0 3px #2c1113);
 }
 
 h2 {
@@ -29,17 +30,19 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     height: 90vh;
-    background-color: #b6a4a5;
-    background-image: url("C:\Users\Admin\Desktop\terasa2.jpg");
+
+    background-image: url(images/bunches1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .slider-content {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 170px;
 }
 
 .slider-content a,
@@ -53,10 +56,12 @@ h2 {
 }
 
 .contact-section {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 100%;
+    
     margin-top: 50px;
 }
 
@@ -64,8 +69,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    height: 400px;
 
     margin-right: 50px;
 }
@@ -113,44 +116,20 @@ h2 {
 .row_of_pictures {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    /* align-items: center; */
+    /* width: 100%; */
+    flex-wrap: wrap;
 
     margin-top: 50px;
 }
 
-.row_of_pictures span{
-    max-width: 20%;
-    max-height: 100px;
-}
-
 .row_of_pictures_img {
-    width: 300px; height: 300px; object-fit: cover;
-    z-index: 100;
-    transition: 1s;
-}
-
-
-
-.row_of_pictures span:hover .row_of_pictures_svg{
-opacity: 1;
-transition: 1s;
-filter: drop-shadow(5px 5px black);
-}
-
-.row_of_pictures span:hover .row_of_pictures_img{
-    filter: grayscale(0.7);
-    transition: 1s;
-}
-
-.row_of_pictures_svg {
-    position: absolute;
-    max-width: 50px;
-    margin-left: -175px;
-    margin-top: 120px;
-    z-index: 1000;
-    transition: 1s;
-    opacity: 0;
+    display: inline;
+    width: 20%; 
+    /* height: auto;  */
+    /* object-fit: cover; */
+    /* z-index: 100;
+    transition: 1s; */
 }
 
 .container {
@@ -160,4 +139,46 @@ filter: drop-shadow(5px 5px black);
     background-color: #fff;
     
     display: block;
+}
+
+/* for phones */
+@media screen and (max-width: 860px) { 
+    .slider {
+        height: 60vh;
+    }
+    
+    .contact-section {
+        flex-direction: column;
+    }
+    
+    .contact-info {
+        margin: 0 10px 20px 10px;
+    }
+    
+    .contact-map iframe {
+        position: absolute;
+        top: 450px;
+        left: 0;
+        width: 100%;
+        /* height: 100%; */
+    }
+    
+    .inst_section {
+        width: 100%;
+        margin-top: 550px;
+    }
+    
+    .row_of_pictures_img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .slider {
+        height: 60vh;
+    }
+
+    .contact-info {
+        margin-left: 10px;
+    }
 }
