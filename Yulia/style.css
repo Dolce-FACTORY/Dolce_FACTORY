@@ -122,12 +122,14 @@ max-height: 100%;
  
 }
 
+
 .picture img {
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   margin-left: 100px;
   float: left;
 }
+
 
 .text-about {
   max-width: fit-content;
@@ -361,6 +363,13 @@ p {
 
 /* Ефект при наведенні на slider-text */
 .hovered {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+/* Ефект при наведенні на slider-text */
+.left-image.hovered {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
 }
