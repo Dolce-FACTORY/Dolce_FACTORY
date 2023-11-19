@@ -51,3 +51,54 @@
     }
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+  const linksContent = document.querySelector('.links-content');
+
+  // Перевіряємо, чи знайдено елемент
+  if (linksContent) {
+    // Додаємо стилізацію
+    linksContent.style.borderBottom = '2px solid #FFA726'; // Додаємо підсвічування знизу
+    linksContent.style.paddingBottom = '10px'; // Збільшуємо відступ знизу
+
+    // Стилізація для посилань у .links-content
+    const links = linksContent.querySelectorAll('a');
+    links.forEach(link => {
+      link.style.color = '#FFA726'; // Блідооранжевий колір тексту
+      link.style.textDecoration = 'none'; // Відміна підкреслення
+      link.style.marginRight = '15px'; // Зовнішній відступ між посиланнями
+      link.style.fontFamily = 'Georgia, serif'; // Змінюємо шрифт
+      link.style.fontSize = '18px'; // Розмір шрифту
+      link.style.transition = 'color 0.3s'; // Плавний перехід кольору тексту
+
+      // Додаємо ефект при наведенні на посилання
+      link.addEventListener('mouseover', function () {
+        link.style.color = '#FF7043'; // Зміна кольору тексту при наведенні
+      });
+
+      link.addEventListener('mouseout', function () {
+        link.style.color = '#FFA726'; // Повернення початкового кольору тексту при знятті наведення
+      });
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const leftPicture = document.querySelector('.left-image');
+
+  leftPicture.addEventListener('mouseover', function () {
+    // Додаємо клас .hovered для зміни стилів при наведенні
+    leftPicture.classList.add('hovered');
+  });
+
+  leftPicture.addEventListener('mouseout', function () {
+    // Видаляємо клас .hovered при знятті наведення
+    leftPicture.classList.remove('hovered');
+  });
+});
+
+  
+  
+  
+  
+  
+  
