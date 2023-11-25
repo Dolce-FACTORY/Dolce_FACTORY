@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+    <section class="slider">
+        <div class="slider-content">
+            <a href="home.html">Home</a>
+            <span style="color: white;">Contact</span>
+        </div>
+        <h1>Contact us</h1>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contanct information</h2>
+
+            <div class="contact-cell">Address: <span>Dovbusha 19, Kolomyia</span></div>
+            <div class="contact-cell">Phone: <span>+380123456789</span></div>
+            <div class="contact-cell">Email: <span>info@gmail.com</span></div>
+            <div class="contact-cell">Website: <span><a href="home.html">Dolce FACTORY</a></span></div>
+        </div>
+
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d660.5746570299674!2d25.0350265!3d48.5275085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736d392c1052af1%3A0xe10e1ba64d6ede87!2sDolce%20FACTORY!5e0!3m2!1suk!2sua!4v1699281054546!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="inst_section">
+        <div class="container">
+            <div class="inst_div">
+                <a href="instagram.com" class="inst_link">INSTAGRAM</a>
+                <div class="row_of_pictures">
+                    <img class="row_of_pictures_img" src="{% static 'images/denys/image3.jpg'%}" alt="">
+                    <img class="row_of_pictures_img" src="{% static 'images/denys/image2.jpg'%}" alt="">
+                    <img class="row_of_pictures_img" src="{% static 'images/denys/image1.jpg'%}" alt="">
+                    <img class="row_of_pictures_img" src="{% static 'images/denys/image4.jpg'%}" alt="">
+                    <img class="row_of_pictures_img" src="{% static 'images/denys/image5.jpg'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+{% endblock %}
+
+<!-- </html> -->
