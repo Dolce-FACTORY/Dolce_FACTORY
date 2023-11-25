@@ -1,5 +1,6 @@
 *.docx
 *.pdf
+.env
 
 # Created by https://www.gitignore.io
 
