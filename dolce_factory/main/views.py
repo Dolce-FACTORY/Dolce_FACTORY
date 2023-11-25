@@ -11,3 +11,5 @@ def reservation(request):
 def contacts(request):
     return render(request, "main/contacts.html")
 
+def home(request):
+    return render(request, "main/home.html" )
