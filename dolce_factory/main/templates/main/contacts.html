@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-
 <body>
     <section class="slider">
         <div class="slider-content">
@@ -42,8 +41,11 @@
             </div>
         </div>
     </section>
+    <style>
+        .slider {
+            background-image: url('{% static "images/denys/bunches1.jpg" %}');
+        }
+    </style>
 </body>
 
 {% endblock %}
-
-<!-- </html> -->

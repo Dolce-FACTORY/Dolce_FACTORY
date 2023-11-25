@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dolce FACTORY</title>
-    <link rel="stylesheet" href="reservation.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-</head>
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
 <body>
     <section class="slider">
         <div class="slider-content">
@@ -21,7 +18,7 @@
             <h2>Fill the form</h2>
 
             <form method="POST" class="info_box">
-                <img src="images/terasa.jpg" id="terasa_img" alt="Фотографія тераси Dolce Factory">
+                <img src="{% static 'images/denys/terasa.jpg' %}" id="terasa_img" alt="Фотографія тераси Dolce Factory">
 
                 <div class="info_column">
                     <span>Ім'я</span>
@@ -41,13 +38,17 @@
                     
                     <input type="submit" name="" id="input-submit" value="Зарезервувати">
                 </div>
-
             </form>
-
         </div>
-
     </section>
 
-    <script src="reservation.js"></script>
+    <style>
+        .slider {
+            background-image: url('{% static "images/denys/bunches1.jpg" %}');
+        }
+    </style>
+
+    <script src="{% static 'main/reservation.js' %}"></script>
 </body>
-</html>
+
+{% endblock %}

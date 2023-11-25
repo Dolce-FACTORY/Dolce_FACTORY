@@ -33,7 +33,7 @@ h1 {
     
     background-size: cover;
     background-position: center;
-    background-image: url(images/bunches1.jpg);
+    /* background-image: url(images/bunches1.jpg); */
 }
 
 .slider-content {
