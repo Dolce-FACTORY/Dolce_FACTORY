@@ -21,7 +21,6 @@ $(function() {
         var isOkPhone = false;
         var isOkTime = false;
         var isOkEmail = false;
-        var isOkDate = false;
         var isOkPeople = false;
 
         var errorCont = $(".error-container");
@@ -40,6 +39,30 @@ $(function() {
         
         if (isValidPeople($("#input-people").val())) isOkPeople = true;
         else $("<p class='error-message'>We can serve from 1 to 20 people by once</p>").appendTo(errorCont);
+
+        if (isOkName == true && isOkPhone == true && isOkTime == true && isOkEmail == true && isOkPeople == true) {
+            $.ajax({
+                url: "/book_table/",
+                type: "POST",
+                dataType: "json",
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest",
+                    "X-CSRFToken": $("[name=csrfmiddlewaretoken]").val(),
+                },
+                data: JSON.stringify({
+                    name: $("#input-name").val(),
+                    email: $("#input-email").val(),
+                    phone_number: $("#input-phone").val(),
+                    date: $("#input-date").val(),
+                    time: $("#input-time").val(),
+                    amount_of_guests: $("#input-people").val(),
+                }),
+                success: function (data) {
+                    $(".success-message").remove();
+                    $("<p class='success-message' style='color: green;'>Successfully booked a table!</p>").appendTo(errorCont);
+                }
+            })
+        }
     });
 });
 
@@ -69,7 +92,6 @@ function isValidTime(t) {
 
 function isValidPeople(people) {
     var people = parseInt(people);
-    console.log(people);
     if (people >= 1 && people <= 20) return true;
     else return false;
 }

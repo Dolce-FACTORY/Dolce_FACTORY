@@ -18,7 +18,11 @@
             <h2>Fill the form</h2>
 
             <form method="POST" class="info_box">
-                <img src="{% static 'images/denys/terasa.jpg' %}" id="terasa_img" alt="Фотографія тераси Dolce Factory">
+                {% csrf_token %}
+
+                <div class="div-for-img">
+                    <img src="{% static 'images/denys/terasa.jpg' %}" id="terasa_img" alt="Фотографія тераси Dolce Factory">
+                </div>
 
                 <div class="info_column">
                     <span>Ім'я</span>
