@@ -1,0 +1,97 @@
+{
+  "menu": [
+    {
+      "name": "Caesar",
+      "photo": "img/caesar.jpg",
+      "ingredients": [
+        "Cherry tomatoes",
+        "Parmesan",
+        "Lettuce",
+        "Chicken breast",
+        "Croutons"
+      ],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Salad with veal",
+      "photo": "img/salad_with_veal.jpg",
+      "ingredients": ["Veal", "Cucumbers", "Tomatoes", "Onions", "Lettuce"],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Four cheese pizza",
+      "photo": "img/four_cheeses.jpg",
+      "ingredients": [
+        "Meat",
+        "Potatoes",
+        "Rice",
+        "TomatoeCreamy sauce",
+        "Mozzarella cheese",
+        "Brie cheese",
+        "Cheddar cheese",
+        "Ricotta cheese",
+        "Parmesan cheese",
+        "Truffle honey"
+      ],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Pizza with shrimps",
+      "photo": "img/pizza_with_shrimp.jpg",
+      "ingredients": [
+        "Cauliflower",
+        "Tomatoes",
+        "Basil",
+        "Arugula",
+        "Mozzapella",
+        "Parmesan",
+        "Green Olives"
+      ],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Truffle Pasta",
+      "photo": "img/truffle_pasta.jpg",
+      "ingredients": [
+        "Tagliatelle",
+        "Truffle paste",
+        "Cream",
+        "Parmesan cheese"
+      ],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Pasta Carbonara",
+      "photo": "img/pasta_carbonara.jpg",
+      "ingredients": ["Spaghetti", "Bacon", "Parmesan", "Cream"],
+      "price": "$29",
+      "category": "main"
+    },
+    {
+      "name": "Strawberries in chocolate",
+      "photo": "img/strawberries_in_chocolate.jpg",
+      "ingredients": ["Strawberries", "Chocolate"],
+      "price": "$29",
+      "category": "dessert"
+    },
+    {
+      "name": "Long Island",
+      "photo": "img/long_island.jpg",
+      "ingredients": [
+        "Vodka",
+        "Gin",
+        "Light rum",
+        "Tequila",
+        "Lemon juice",
+        "Coca Cola"
+      ],
+      "price": "$10",
+      "category": "drinks"
+    }
+  ]
+}
