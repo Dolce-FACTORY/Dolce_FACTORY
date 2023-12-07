@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolche FACTORY</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
 <body>
     <section class="slider">
-      <div class="links-content">
-        <a href="Home.html">Home</a>
-        <a href="Menu.html">Menu</a>
-        <a href="Reservation.html">Reservation</a>
-        <a href="Contact.html">Contact us</a> 
+      
+      <div class="image-slider" id="sliderText">
+        <img class="top-image" src="{% static 'images/denys/pie.jpg' %}" alt="image of bunches">
+        <img src="{% static 'images/denys/bunches.jpg' %}" alt="tasty pie">
       </div>
 
-      <div class="image-slider">
-          <img class="top-image" src="images/pie.jpg" alt="image of bunches" >
-          <img src="images/bunches.jpg" alt="tasty pie">
-      </div>
-      
       <div class="slider-text">
         <h1>Welcome to Dolche FACTORY</h1>
         <p>Discover the finest desserts in town!</p>
-    </div>
-    <div class="slider-button">
-      <a href="Reservation.html" class="btn">Book a table</a>
-    </div>
-  
-    <script src="script.js"></script>
+      </div>
+      <div class="slider-button">
+        <a href="Reservation.html" class="btn">Book a table</a>
+      </div>
+
     </section>
-    
+
+
     <section class="information">
       <div class="two-blocks-container">
         <div class="picture">
-          <img src="images/bakery.jpg" alt="Bakery Image" class="left-image"> 
+          <img src="{% static 'images/denys/bakery.jpg' %}" alt="Bakery Image" class="left-image"> 
         </div>
         <div class="text-about">
           <span class="subheading">Про нас</span>
@@ -65,5 +55,8 @@
         </div>
       </div>
     </section>
+    <script src="{% static 'main/home.js' %}"></script>
+    
+   
 </body>
-</html>
+{% endblock %}

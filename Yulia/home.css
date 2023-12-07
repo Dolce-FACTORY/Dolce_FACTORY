@@ -1,4 +1,4 @@
-/* Add this CSS to your style.css file */
+
 *{
   margin: 0;
   padding: 0;
@@ -44,6 +44,7 @@
   font-size: 24px; /* Increase font size */
   font-weight: bold; /* Add bold font-weight */
   transition: color 0.3s; /* Add smooth color transition on hover */
+  
 }
 
 .links-content a:hover {
@@ -121,12 +122,14 @@ max-height: 100%;
  
 }
 
+
 .picture img {
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   margin-left: 100px;
   float: left;
 }
+
 
 .text-about {
   max-width: fit-content;
@@ -202,4 +205,171 @@ p {
 .working-hours p {
   font-size: 14px;
   margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1344px) {
+  /* Styles for screens below 1344px (smaller desktop) */
+  .slider-text {
+    padding: 15px;
+  }
+
+  .slider-text h1,
+  .slider-text p {
+    font-size: 28px;
+  }
+
+  .slider-button .btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Styles for screens below 1200px (smaller desktop) */
+  .picture img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .text-about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  /* Styles for screens below 944px (tablets) */
+  .slider-text {
+    padding: 10px;
+  }
+
+  .slider-text h1,
+  .slider-text p {
+    font-size: 24px;
+  }
+
+  .slider-button .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  /* Styles for screens below 704px (smaller tablets) */
+  .picture img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .text-about {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .slider-text h1,
+  .slider-text p {
+    font-size: 20px;
+    margin: 0;
+    transition: opacity 1s ease; /* Додайте перехід для властивості opacity */
+  }
+
+  .animate-text {
+    opacity: 0;
+  }
+
+  .slider-button .btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  /* Styles for screens below 554px (phones) */
+  
+  /* Header styles */
+  .links-content {
+    padding: 1%;
+  }
+
+  .links-content a {
+    font-size: 3vw;
+  }
+
+  /* Slider styles */
+  .slider-text {
+    padding: 2%;
+  }
+
+  .slider-text h1,
+  .slider-text p {
+    font-size: 4vw;
+  }
+
+  .slider-button .btn {
+    font-size: 2vw;
+    padding: 1% 2%;
+  }
+
+  /* Information Section styles */
+  .picture img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .text-about {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 3vw;
+  }
+
+  .subheading {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 6vw;
+    margin-top: 3%;
+  }
+
+  p {
+    font-size: 3vw;
+    margin-top: 3%;
+  }
+
+  .contacts-content {
+    max-width: 90%;
+  }
+
+  .btn-instagram {
+    padding: 1.5% 3%;
+    font-size: 2vw;
+  }
+
+  .working-hours p {
+    font-size: 1.5vw;
+    margin-top: 2%;
+  }
+}
+
+
+/* Анімація при завантаженні сторінки */
+.animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Ефект при наведенні на slider-text */
+.hovered {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+/* Ефект при наведенні на slider-text */
+.left-image.hovered {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }

@@ -1,0 +1,58 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+    <section class="slider">
+        <div class="slider-content">
+            <a href="home.html">Home</a>
+            <span style="color: white;">Reservation</span>
+        </div>
+        <h1 >Make a reservation</h1>
+    </section>
+
+    <section class="reservation">
+        <div class="container">
+            <h2>Fill the form</h2>
+
+            <form method="POST" class="info_box">
+                {% csrf_token %}
+
+                <div class="div-for-img">
+                    <img src="{% static 'images/denys/terasa.jpg' %}" id="terasa_img" alt="Фотографія тераси Dolce Factory">
+                </div>
+
+                <div class="info_column">
+                    <span>Ім'я</span>
+                    <input type="text" class="input_class" placeholder="Ім'я" id="input-name">
+                    <span>Номер телефону</span>
+                    <input type="tel" class="input_class" placeholder="Номер телефону" value="+380" id="input-phone">
+                    <span>Час</span>
+                    <input type="time" class="input_class" placeholder="Час" id="input-time" min="09    :00" max="22:00">
+                </div>
+                <div class="info_column">
+                    <span>Електронна скринька</span>
+                    <input type="email" class="input_class" placeholder="Електронна скринька" id="input-email">
+                    <span>Дата</span>
+                    <input type="date" class="input_class" placeholder="Дата" id="input-date">
+                    <span>К-сть осіб</span>
+                    <input type="number" class="input_class" placeholder="К-сть осіб" id="input-people" value="1" min="1" max="20">
+                    
+                    <input type="submit" name="" id="input-submit" value="Зарезервувати">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <style>
+        .slider {
+            background-image: url('{% static "images/denys/bunches1.jpg" %}');
+        }
+    </style>
+
+    <script src="{% static 'main/reservation.js' %}"></script>
+</body>
+
+{% endblock %}
